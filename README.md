@@ -30,8 +30,8 @@ Users should be able to:
 
 ### Links
 
--   Solution URL: []([https://your-solution-url.com](https://github.com/Webmounster/Four-card-feature-section))
--   Live Site URL: [](https://your-live-site-url.com)
+-   Solution URL: [Add solution URL here](https://github.com/Webmounster/Four-card-feature-section)
+-   Live Site URL: [Add Live site URL here](https://webmounster.github.io/Four-card-feature-section/)
 
 ## My process
 
