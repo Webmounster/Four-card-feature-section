@@ -1,0 +1,165 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap');
+
+:root {
+    --Red: hsl(0, 78%, 62%);
+    --Cyan: hsl(180, 62%, 55%);
+    --Orange: hsl(34, 97%, 64%);
+    --Blue: hsl(212, 86%, 64%);
+    --VeryDarkBlue: hsl(234, 12%, 34%);
+    --GrayishBlue: hsl(229, 6%, 66%);
+    --VeryLightGray: hsl(0, 0%, 98%);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+    background-color: var(--VeryLightGray);
+}
+
+.container {
+    margin: 90px 30px;
+}
+
+/* ----------------- HEADER -------------------- */
+
+header {
+    /* border: 1px solid black; */
+    /* margin: 90px 40px 80px 40px; */
+    text-align: center;
+    margin-bottom: 50px;
+}
+header h1 {
+    font-size: 1.6em;
+    font-weight: 200;
+    animation: leftright 1000ms;
+}
+header h2 {
+    font-size: 1.6em;
+    font-weight: 600;
+    animation: rightleft 1000ms;
+}
+header p {
+    margin-top: 25px;
+    color: var(--GrayishBlue);
+    animation: updown 1000ms;
+}
+
+/* ----------------- CARDS -------------------- */
+
+.cards-container {
+    /* border: 1px solid black; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    animation: downup 1000ms;
+}
+
+.card {
+    /* border: 1px solid black; */
+    background-color: var(--VeryLightGray);
+    width: 310px;
+    height: 220px;
+    padding: 30px;
+    border-radius: 5px;
+    display: grid;
+    margin-bottom: 25px;
+    box-shadow: 0 0 20px 2px var(--GrayishBlue);
+}
+
+.card p {
+    font-size: 0.89em;
+    font-weight: 400;
+    color: var(--GrayishBlue);
+}
+
+.card img {
+    justify-self: end;
+    align-self: last baseline;
+}
+
+.card1 {
+    border-top: 3px solid var(--Cyan);
+}
+.card2 {
+    border-top: 3px solid var(--Red);
+}
+.card3 {
+    border-top: 3px solid var(--Orange);
+}
+.card4 {
+    border-top: 3px solid var(--Blue);
+}
+
+card h3 {
+    font-weight: 600;
+}
+
+/* ----------------- FOOTER -------------------- */
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+/* ----------------- (>1440px)------------------------ */
+@media only screen and (min-width: 1175px) {
+    header {
+        margin: 0 auto;
+        max-width: 600px;
+        margin-bottom: 25px;
+    }
+    .cards-container {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .card {
+        margin: 20px 20px;
+    }
+}
+
+/* ------------------- ANIMATION ------------------------ */
+@keyframes leftright {
+    0% {
+        transform: translateX(-500px);
+    }
+    100% {
+        transform: translateX(0px);
+    }
+}
+@keyframes rightleft {
+    0% {
+        transform: translateX(500px);
+    }
+    100% {
+        transform: translateX(0px);
+    }
+}
+@keyframes updown {
+    0% {
+        transform: translateY(-500px);
+    }
+    100% {
+        transform: translateY(0px);
+    }
+}
+@keyframes downup {
+    0% {
+        transform: translateY(500px);
+    }
+    100% {
+        transform: translateY(0px);
+    }
+}
